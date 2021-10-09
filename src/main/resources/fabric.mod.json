@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "pettablebees",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Pettable Bees",
+  "description": "A Minecraft mod that lets you pet bees",
   "authors": [
-    "Me!"
+    "Fusion Flux"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/pettable-bees",
+    "sources": "https://github.com/Fusion-Flux/Pettable-Bees",
+    "issues": "https://github.com/Fusion-Flux/Pettable-Bees/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0",
+  "icon": "assets/pettablebees/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.fusionflux.pettablebees.PettableBees"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "pettablebees.mixins.json"
   ],
 
   "depends": {
