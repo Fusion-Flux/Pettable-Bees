@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.fusionflux.pettablebees.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "refmap": "pettablebees.refmap.json",
+  "mixins": [
+    "BeeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8.4"
+}
