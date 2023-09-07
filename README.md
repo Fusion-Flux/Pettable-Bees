@@ -1,4 +1,4 @@
-# Fabric Example Mod
+# Pettable Bees
 
 ## What is this fork?
 
@@ -10,4 +10,4 @@ For setup instructions, please take a look at the [fabric wiki page](https://fab
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it into your own projects.
+Template is available under the CC0 license. Feel free to learn from it and incorporate it into your own projects.
