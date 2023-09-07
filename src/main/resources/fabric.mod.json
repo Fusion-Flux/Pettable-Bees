@@ -6,12 +6,12 @@
   "name": "Pettable Bees",
   "description": "A Minecraft mod that lets you pet bees",
   "authors": [
-    "Fusion Flux"
+    "Fusion Flux",
+	"slimakiswinka"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/pettable-bees",
-    "sources": "https://github.com/Fusion-Flux/Pettable-Bees",
-    "issues": "https://github.com/Fusion-Flux/Pettable-Bees/issues"
+    "sources": "https://github.com/slimakiswinka/Pettable-Bees",
+    "issues": "https://github.com/slimakiswinka/Pettable-Bees/issues"
   },
 
   "license": "LGPL-3.0",
@@ -30,10 +30,10 @@
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.17.x",
+    "minecraft": ">=1.17",
     "java": ">=16"
   },
   "suggests": {
-    "another-mod": "*"
+    "sodium": "*"
   }
 }

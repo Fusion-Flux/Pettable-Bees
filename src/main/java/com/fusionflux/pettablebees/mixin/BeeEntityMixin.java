@@ -28,19 +28,19 @@ public abstract class BeeEntityMixin extends AnimalEntity {
     public ActionResult interactMob(PlayerEntity player, Hand hand) {
         ItemStack itemStack = player.getStackInHand(hand);
         if (itemStack.isOf(Items.AIR)) {
-            this.world.playSound(player, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_BEE_POLLINATE, this.getSoundCategory(), 1.0F, this.random.nextFloat() * 0.4F + 0.8F);
-            if (!this.world.isClient) {
+            this.getWorld().playSound(player, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_BEE_POLLINATE, this.getSoundCategory(), 1.0F, this.random.nextFloat() * 0.4F + 0.8F);
+            if (!this.getWorld().isClient) {
                 this.setAngerTime(0);
-            }else if(this.world.isClient){
+            }else if(this.getWorld().isClient){
                 for(int i = 0; i < 3; ++i) {
                     double d = this.random.nextGaussian() * 0.02D;
                     double e = this.random.nextGaussian() * 0.02D;
                     double f = this.random.nextGaussian() * 0.02D;
-                    this.world.addParticle(ParticleTypes.HEART, this.getParticleX(1.0D), this.getRandomBodyY() + 0.5D, this.getParticleZ(1.0D), d, e, f);
+                    this.getWorld().addParticle(ParticleTypes.HEART, this.getParticleX(1.0D), this.getRandomBodyY() + 0.5D, this.getParticleZ(1.0D), d, e, f);
                 }
             }
 
-            return ActionResult.success(this.world.isClient);
+            return ActionResult.success(this.getWorld().isClient);
         } else {
             return super.interactMob(player, hand);
         }
