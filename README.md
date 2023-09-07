@@ -1,9 +1,5 @@
 # Pettable Bees
 
-## What is this fork?
-
-I will **try** to keep it updated for newer Minecraft because i love Bees.
-
 ## Setup
 
 For setup instructions, please take a look at the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) related to the IDE you are using.
